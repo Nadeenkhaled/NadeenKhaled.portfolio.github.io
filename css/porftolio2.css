@@ -1,11 +1,14 @@
 html{ 
     -webkit-tap-highlight-color: transparent;
 }
+*{
+    box-sizing: border-box;
+}
 body {
     position: relative;
     z-index: -1;
     margin:0;
-    font-family:font-family: 'Galada', cursive;
+    font-family: 'Galada', cursive;
     background-image: linear-gradient(180deg, #ff0060, #ff6975);
     background-repeat: repeat-x;
 }
@@ -18,7 +21,7 @@ body {
     right:0;
     bottom:50%;
     width: 100%;
-    background-image:url(images/me.JPG);
+    background-image:url(../images/me.JPG);
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -46,11 +49,11 @@ header {
     padding:0.7rem;
     line-height:1rem;
 }
-.p-header {
+.text-header p{
     font-size: 1rem;
 }
 .icons-list {
-    padding:0 1rem 0 1rem;
+    padding:0 1rem;
     size: 1rem;
     margin:3rem;
 }
@@ -68,19 +71,26 @@ header {
 }
 i { 
     color:#000000;
-    padding:0 1rem 0 1rem;
+    padding:0 1rem;
 }
 img { 
     display: block;
-    width:90%;
+    max-width:90%;
+    height:auto;
     margin-left:1rem;
+}
+.img-left::after{
+    content:"";
+    clear:both;
+    display:table;
+
 }
 
                        /*text1,2,3*/
 .inf {
     display:block;
     background-color: rgb(255, 242, 242);;
-    margin:2rem 0 2rem 0;
+    margin:2rem 0;
     padding-bottom: 3rem;
     padding-top:0.5rem;
 }
@@ -94,7 +104,7 @@ img {
     margin:0;
     padding-right:0;
 }
-.Img-work {
+.img-work {
     display:flex;
     flex-flow: row nowrap;
 }
@@ -141,7 +151,7 @@ textarea {
 button {
     margin-left:1rem;
     border-radius:100px;
-    padding:0.8rem 1.2rem 0.8rem 1.2rem;
+    padding:0.8rem 1.2rem;
     background-color: #FF5571;
     border:1px solid #FF5571;
     color:rgb(255, 246, 246);    
@@ -172,4 +182,56 @@ a:hover {
     border:1px solid #FF5571;
 }
 
+                          /*media queries phone*/
 
+@media screen and (max-width:768px) {
+
+.text-header h1 {
+        font-size: 3rem;
+    }
+.icons-list-item {
+    display:flex;
+    flex-direction: column;
+    margin-bottom:0.3rem;
+}
+.content{
+    display:flex;
+    flex-direction: column;
+}
+.img-left{ 
+    margin:0 auto;
+    padding-bottom:1rem; 
+}
+h2{  
+    text-align: center;
+}
+.details{
+    text-align:center;
+    margin-right:1rem;
+}
+.img-center{
+    text-align: center;
+}
+.dec{ 
+    margin-bottom:1rem;
+}
+button{
+    padding: 0.5rem 1rem;
+    width:50%;
+}
+.text-footer{
+    font-size:2rem;
+}
+}
+
+                           /*media queries tablet*/
+@media screen and (min-width:600px){
+.details{ 
+    text-align:center;
+    margin:0 1rem;
+}
+.space-even{
+    display:flex;
+    flex-direction: column;
+}
+}
