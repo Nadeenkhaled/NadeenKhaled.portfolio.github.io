@@ -189,6 +189,11 @@ a:hover {
 .text-header h1 {
         font-size: 2rem;
     }
+.text-header p {
+    font-size:0.8rem;
+    text-align: center;
+    margin-right:1rem;
+}    
 .icons-list-item {
     display:flex;
     flex-direction: column;
