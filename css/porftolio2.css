@@ -187,7 +187,12 @@ a:hover {
 @media screen and (max-width:768px) {
 
 .text-header h1 {
-        font-size: 3rem;
+        font-size: 2rem;
+    }
+.text-header p {
+    font-size: 0.8rem;
+    margin-right:2rem;
+
     }
 .icons-list-item {
     display:flex;
