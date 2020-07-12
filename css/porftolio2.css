@@ -20,9 +20,9 @@ body {
     left: 0;
     right:0;
     bottom:50%;
-    width: 100%;
+    max-width: 100%;
     background-image:url(../images/me.JPG);
-    background-size: cover;
+    background-size:cover;
     background-position: top center;
     background-repeat: no-repeat;
 }
@@ -66,9 +66,6 @@ header {
     color:white;
 }
 
-.white-text {
-    color: #fff
-}
 i { 
     color:#000000;
     padding:0 1rem;
@@ -98,9 +95,12 @@ img {
     display:inline-block;
     margin:2rem 0 0 0;
 }
+.text-about{
+    text-align:left;
+}
 .img-left {
     float:left;
-    width:30%;
+    width:50%;
     margin:0;
     padding-right:0;
 }
@@ -187,13 +187,8 @@ a:hover {
 @media screen and (max-width:768px) {
 
 .text-header h1 {
-        font-size: 2rem;
+        font-size: 3rem;
     }
-.text-header p {
-    font-size:0.8rem;
-    text-align: center;
-    margin-right:1rem;
-}    
 .icons-list-item {
     display:flex;
     flex-direction: column;
@@ -203,14 +198,15 @@ a:hover {
     display:flex;
     flex-direction: column;
 }
-.img-left{ 
+.img-left{
+    width:100%;
     margin:0 auto;
     padding-bottom:1rem; 
 }
 h2{  
     text-align: center;
 }
-.details{
+.text-about{
     text-align:center;
     margin-right:1rem;
 }
@@ -227,6 +223,15 @@ button{
 .text-footer{
     font-size:2rem;
 }
+.space-even .a ,h3 {
+    font-size:1.2rem;    
+}
+.space-even .fa {
+    padding-right:0.2rem;
+    padding-left:0;
+
+}
+
 }
 
                            /*media queries tablet*/
