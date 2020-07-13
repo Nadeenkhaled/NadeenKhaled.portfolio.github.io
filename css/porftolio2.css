@@ -97,6 +97,7 @@ img {
 }
 .text-about{
     text-align:left;
+    margin-right: 0.3rem;
 }
 .img-left {
     float:left;
@@ -182,17 +183,12 @@ a:hover {
     border:1px solid #FF5571;
 }
 
-                          /*media queries phone*/
+                          /*media queries mobile*/
 
 @media screen and (max-width:768px) {
 
 .text-header h1 {
         font-size: 2rem;
-    }
-.text-header p {
-    font-size: 0.8rem;
-    margin-right:2rem;
-
     }
 .icons-list-item {
     display:flex;
@@ -240,7 +236,8 @@ button{
 }
 
                            /*media queries tablet*/
-@media screen and (min-width:600px){
+@media screen and (min-width:480px) 
+              and (max-width:768px) {
 .details{ 
     text-align:center;
     margin:0 1rem;
@@ -249,4 +246,13 @@ button{
     display:flex;
     flex-direction: column;
 }
+.img-center {
+    width:90%;
+    margin:0 auto;
+    
+}
+.dec{
+    margin-bottom: 0.5rem;
+}
+
 }
