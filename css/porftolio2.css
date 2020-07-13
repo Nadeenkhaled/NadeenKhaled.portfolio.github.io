@@ -247,7 +247,7 @@ button{
     flex-direction: column;
 }
 .img-center {
-    width:90%;
+    flex: 0 1 auto;
     margin:0 auto;
     
 }
